@@ -1,6 +1,7 @@
 const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
-const secretMessage = // use .map to get the first letter of every animal name in the arrray animals
+const secretMessage = animals.map(animal => animal[0])
+    // use .map to get the first letter of every animal name in the array animals
 
 console.log(secretMessage.join(''));
 
