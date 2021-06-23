@@ -2,6 +2,8 @@
 
 const fruits = ["Albicocche", "Ananas", "Melone", "Pera", "Mango"];
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log(`${i} - ${fruits[i]}`);
-}
+const printFruits = (fruits, index) => {
+  console.log(`${index +1} - ${fruits}`);
+};
+console.log('printing fruits with forEach');
+fruits.forEach(printFruits);
